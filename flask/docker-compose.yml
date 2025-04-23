@@ -1,0 +1,8 @@
+name: app
+services:
+    web:
+        build: app
+        ports:
+            - "8000:5000"
+    redis:
+        image: "redis:alpine"
